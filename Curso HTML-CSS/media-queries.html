@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div.head{
+            display: flex;
+        }
+        div.left{
+            width: 100%;
+            height: 400px;
+            background-color: greenyellow;
+            text-align: center;
+        }
+        div.left > img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 5px;
+            background-color: rgb(225, 127, 255);
+        }
+        div.right{
+            width: 100%;
+            height: 400px;
+            background-color: brown;
+            position: relative;
+        }
+        div.right > nav{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div.right > nav > a{
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        @media all and (max-width: 880px){
+            div.head{
+                display: block;
+            }
+            div.right{
+                height: 50px;
+            }
+            div.right > nav{
+            position: relative;
+        }
+        }
+    </style>
+    <title>Media Queries</title>
+</head>
+<body>
+
+    <div class="head">
+
+        <div class="left">
+
+            <h1>Leonardo Santos</h1>
+
+            <p>Desenvolverdor Web</p>
+
+            <img src="" alt="">
+
+        </div>
+
+        <div class="right">
+
+            <nav>
+
+                <a href="#">Link 01</a>
+                <a href="#">Link 02</a>
+                <a href="#">Link 03</a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
